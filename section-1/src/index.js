@@ -1,19 +1,19 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-const navbar = (
-    <nav>
-        <h1>Bob's Bistro</h1>
-        <ul>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+const page = (
+  <div>
+    <img src="./react-logo.png" width="40px" alt="react logo"/>
+    <h1>Fun facts about React</h1>
+    <ul>
+      <li>Was first released in 2013</li>
+      <li>Was originally created by jordan walke</li>
+      <li>Has well over 100k starts on github</li>
+      <li>Is maintained by Facebook</li>
+      <li>Powers thousand of enterprise apps, including mobile app</li>
+    </ul>
+  </div>
 )
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(navbar)
-
-// ReactDOM.render(navbar, document.getElementById("root"))
-// ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+root.render(page)
